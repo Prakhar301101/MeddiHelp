@@ -1,0 +1,274 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Navigation */
+nav {
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a.logo {
+    font-size: 1.5em;
+    color: #ecf0f1;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+.appointment-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Home Section */
+#home {
+    background: url('banner.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+.home-content h1 {
+    font-size: 2.5em;
+}
+.home-content button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+
+.container {
+    color: black;
+}
+
+
+/* Services Section */
+#services {
+    background-color: #ecf0f1;
+    padding: 50px;
+    text-align: center;
+}
+.service-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+}
+.service-card i {
+    font-size: 2em;
+    color: #e74c3c;
+}
+
+/* Chatbot Popup */
+.chatbot-popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.chatbot-header {
+    background-color:#2c3e50;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-box {
+    padding: 10px;
+    overflow-y: hidden; /* Hide overflow here */
+    height: 400px; /* Set height for chat-box */
+}
+
+.chat-content {
+    max-height: 100%; /* Allow it to take full height */
+    overflow-y: auto; /* Enable scrolling only here */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* User and Bot Message Styling */
+.user-message, .bot-message {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 15px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #e1f5fe;
+    color: #000;
+    border-radius: 15px 15px 15px 0;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #dcedc8;
+    color: #000;
+    border-radius: 15px 15px 0 15px;
+}
+
+#chat-input {
+    width: 100%;
+}
+
+/* Doctors Section */
+#doctors {
+    background-color: #ecf0f1;
+    padding: 50px;
+    text-align: center;
+}
+.doctor-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+}
+.doctor-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Blog Section */
+#blog {
+    background-color: #f7f7f7;
+    padding: 50px;
+    text-align: center;
+}
+.blog-post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #2c3e50;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Doctors Section */
+#doctors {
+    background-color: #ecf0f1;
+    padding: 50px;
+    text-align: center;
+}
+
+.doctor-carousel {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    padding: 20px 0; /* Add padding for better appearance */
+    gap: 20px; /* Space between cards */
+}
+
+.doctor-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px; /* Fixed width for each card */
+    text-align: center;
+    flex: 0 0 auto; /* Prevent cards from shrinking */
+}
+
+.doctor-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.btn-secondary {
+    margin-left: auto; /* Push the button to the right */
+}
+.see-all {
+    color: rgba(0, 0, 0, 0.5); /* Grey color with transparency */
+    cursor: pointer; /* Changes cursor to pointer */
+    text-decoration: underline; /* Adds an underline for emphasis */
+    margin-top: -35px;
+}
+/* Typing Indicator Container */
+.typing-indicator {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: #dcedc8;
+    color: #000;
+    border-radius: 15px 15px 0 15px;
+    max-width: 70%;
+    margin-bottom: 10px;
+}
+
+/* Dots Animation */
+.typing-indicator .dot {
+    background-color: #000;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    margin: 0 2px;
+    animation: typing 1s infinite alternate;
+}
+
+.typing-indicator .dot:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.typing-indicator .dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-indicator .dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes typing {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
