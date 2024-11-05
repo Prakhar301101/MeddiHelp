@@ -268,8 +268,7 @@
             addBotMessage("Here is the response from PillPaw."); // Replace with actual response
         }, 2000);
     }
-
-    $('#send-button').click(function() {
+    function promptResult(){
         const message = $('#chat-input').val().trim();
         if (message === '') return; // Prevent empty messages
 
@@ -295,7 +294,14 @@
                 addBotMessage("Sorry, something went wrong!"); // Display error message
             }
         });
-    });
+    }
+    $('#send-button').click(promptResult);
+    $("#chat-input").on("keypress",(ev)=>{
+        if(ev.keyCode===13){
+            ev.preventDefault();
+            promptResult();
+        }
+    })
 </script>
 </body>
 </html>

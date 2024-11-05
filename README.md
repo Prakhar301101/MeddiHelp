@@ -19,7 +19,7 @@ To begin working with MeddiHelp, ensure your system meets the following prerequi
 To get the latest version of MeddiHelp, clone the repository from GitHub. This will create a local copy of the project files and directory structure on your machine.
 
 ```bash
-git clone https://github.com/your-username/MeddiHelp.git
+git clone https://github.com/shrek1918/MeddiHelp.git
 cd MeddiHelp
 ```
 
@@ -38,7 +38,8 @@ The `requirements.txt` file contains a list of all libraries needed for MeddiHel
 To securely manage your API keys and any sensitive data, you’ll need to create a `.env` file:
 
 1. In the `MeddiHelp` directory, create a `.env` file.
-2. Add your Google API key as follows:
+2. Go to [Google-AI Studio](https://aistudio.google.com/apikey) and generate your aAPI Key.
+3. Add your Google API key by creating a .env file as follows:
 
    ```plaintext
    GOOGLE_API_KEY=your_api_key_here
